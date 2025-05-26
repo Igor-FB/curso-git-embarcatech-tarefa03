@@ -1,0 +1,36 @@
+pwd
+mkdir tarefa03git
+git init --initial-branch=main
+git config user.name IgorBarbosa
+git config user.email ferreira.igor@academico.ifrn.edu.br
+git remote add origin-github https://github.com/Igor-FB/curso-git-embarcatech-tarefa03.git
+(criação dos arquivos .txt)
+git status
+git add Arquivo1.txt Arquivo2.txt Arquivo3.txt
+git status
+git commit -m "Primeiro commit dos arquivos .txt"
+git push -u origin-github main
+(alteração nos arquivos 1 e 2)
+git status
+git commit -am "Segundo commit com alterações nos arquivos 1 e 2"
+git push -u origin-github main
+git log
+git log --oneline
+git log --graph
+git log --decorate
+git log --all
+git checkout 5f7a474
+git switch main
+git log --oneline
+git revert 7b7d696
+:wq
+git push -u origin-github main
+git reflog
+git checkout -b testa-stash
+git stash
+git stash list
+git stash pop
+git commit -am "testando stash"
+git switch main
+git push -u origin-github main
+git push -u origin-github testa-stash
